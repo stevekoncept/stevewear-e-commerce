@@ -1,0 +1,95 @@
+export const products = {
+  jeans: [
+    {
+      id: "jeans-001",
+      name: "Classic Straight Jean",
+      category: "jeans",
+      categoryLabel: "Jeans",
+      price: 48000,
+      description: "Mid Blue / Straight Fit",
+      image: "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=85",
+      badge: "NEW",
+    },
+    {
+      id: "jeans-002",
+      name: "Washed Denim Jean",
+      category: "jeans",
+      categoryLabel: "Jeans",
+      price: 52000,
+      description: "Washed Black / Loose Fit",
+      image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=85",
+      badge: "",
+    },
+  ],
+  shorts: [
+    {
+      id: "shorts-001",
+      name: "Relaxed Cargo Short",
+      category: "shorts",
+      categoryLabel: "Shorts",
+      price: 32000,
+      description: "Stone / Relaxed Fit",
+      image: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=900&q=85",
+      badge: "NEW",
+    },
+    {
+      id: "shorts-002",
+      name: "Weekend Denim Short",
+      category: "shorts",
+      categoryLabel: "Shorts",
+      price: 29000,
+      description: "Blue Wash / Relaxed",
+      image: "https://images.unsplash.com/photo-1598522325074-042db73aa4e6?auto=format&fit=crop&w=900&q=85",
+      badge: "",
+    },
+  ],
+  polos: [
+    {
+      id: "polos-001",
+      name: "Essential Polo",
+      category: "polos",
+      categoryLabel: "Polos",
+      price: 28000,
+      description: "Black / Regular Fit",
+      image: "https://images.unsplash.com/photo-1671438118097-479e63198629?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8UG9sb3xlbnwwfHwwfHx8MA%3D%3D",
+      badge: "BESTSELLER",
+      badgeDark: true,
+    },
+    {
+      id: "polos-002",
+      name: "Daily Fit Polo",
+      category: "polos",
+      categoryLabel: "Polos",
+      price: 30000,
+      description: "Cream / Regular Fit",
+      image: "https://images.unsplash.com/photo-1625910513413-c23b8bb81cba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8UG9sb3xlbnwwfHwwfHx8MA%3D%3D",
+      badge: "",
+    },
+  ],
+  shirts: [
+    {
+      id: "shirts-001",
+      name: "Oxford Everyday Shirt",
+      category: "shirts",
+      categoryLabel: "Shirts",
+      price: 35000,
+      description: "White / Relaxed Fit",
+      image: "https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=900&q=85",
+      badge: "NEW",
+    },
+    {
+      id: "shirts-002",
+      name: "Premium Casual Shirt",
+      category: "shirts",
+      categoryLabel: "Shirts",
+      price: 39000,
+      description: "Navy / Oversized Fit",
+      image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=85",
+      badge: "",
+    },
+  ],
+};
+
+export const allProducts = Object.values(products).flat();
+
+export const formatPrice = (price) => `₦${Number(price).toLocaleString()}`;
